@@ -166,6 +166,8 @@
                 <ref bean="searchFilterOfficialSubject" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterAudience" />
+                <ref bean="searchFilterCoverage" />
+                <ref bean="searchFilterType"/>
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
@@ -181,6 +183,8 @@
                 <ref bean="searchFilterOfficialSubject" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterAudience" />
+                <ref bean="searchFilterCoverage" />
+                <ref bean="searchFilterType"/>
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
@@ -2322,6 +2326,18 @@
         <property name="sortOrderFilterPage" value="COUNT"/>
     </bean>
 
+
+    <bean id="searchFilterCoverage" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="coverage"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.coverage.spatial</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+    </bean>
     <bean id="searchFilterEntityType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="entityType"/>
         <property name="metadataFields">
@@ -2340,7 +2356,7 @@
         <property name="indexFieldName" value="subject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.subject.*</value>
+                <value>dc.subject</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -2350,16 +2366,17 @@
 
     </bean>
 
-    <bean id="searchFilterOfficialSubject" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+    <bean id="searchFilterOfficialSubject" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
         <property name="indexFieldName" value="officialsubject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.subject.other.*</value>
+                <value>dc.subject.other</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
         <property name="sortOrderSidebar" value="COUNT"/>
         <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="splitter" value="::"/>
     </bean>
 
     <bean id="searchFilterIssued" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
@@ -2414,6 +2431,9 @@
                 <value>dc.type</value>
             </list>
         </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
     </bean>
 
     <bean id="searchFilterIdentifier" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
