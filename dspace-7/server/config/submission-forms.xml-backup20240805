@@ -1511,7 +1511,7 @@
                 <stored-value>issn</stored-value>
             </pair>
             <pair>
-                <displayed-value>Course Code</displayed-value>
+                <displayed-value>Other</displayed-value>
                 <stored-value>other</stored-value>
             </pair>
             <pair>
@@ -1530,6 +1530,10 @@
                 <displayed-value>ISBN</displayed-value>
                 <stored-value>isbn</stored-value>
             </pair>
+            <pair>
+                <displayed-value>Course code</displayed-value>
+                <stored-value>Course code</stored-value>
+            </pair>
         </value-pairs>
         <value-pairs value-pairs-name="common_hsauthors" dc-term="author">
             <pair>
@@ -1545,8 +1549,8 @@
                 <stored-value>Alhallaak, Luai</stored-value>
             </pair>
             <pair>
-                <displayed-value>Ahmad Alibrahim</displayed-value>
-                <stored-value>Alibrahim, Ahmad</stored-value>
+                <displayed-value>Ahmed Elibrahim</displayed-value>
+                <stored-value>Elibrahim, Ahmed</stored-value>
             </pair>
             <pair>
                 <displayed-value>Milan Perić</displayed-value>
@@ -1577,8 +1581,8 @@
                 <stored-value>Gajić, Bojan</stored-value>
             </pair>
             <pair>
-                <displayed-value>Tetiana Kolosova</displayed-value>
-                <stored-value>Kolosova, Tetiana</stored-value>
+                <displayed-value>Dr.Raymond Wong Nang Man</displayed-value>
+                <stored-value>Dr. Wong Nang Man, Raymond </stored-value>
             </pair>
             <pair>
                 <displayed-value>Teodora Zujovic</displayed-value>
@@ -1619,14 +1623,6 @@
             <pair>
                 <displayed-value>Ljubomir Matić</displayed-value>
                 <stored-value>Matić, Ljubomir</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Mahidol University</displayed-value>
-                <stored-value>Mahidol University</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Miloš Opačić</displayed-value>
-                <stored-value>Opačić, Miloš</stored-value>
             </pair>
             <pair>
                 <displayed-value>William Ch. Neumann</displayed-value>
@@ -1708,11 +1704,6 @@
                 <displayed-value>Ukraine</displayed-value>
                 <stored-value>Ukraine</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Mongolia</displayed-value>
-                <stored-value>Mongolia</stored-value>
-            </pair>
- 
            <pair>
                 <displayed-value>Colombia</displayed-value>
                 <stored-value>Colombia</stored-value>
@@ -1746,11 +1737,6 @@
                 <stored-value>Syria</stored-value>
             </pair>
             <pair>
-                <displayed-value>India</displayed-value>
-                <stored-value>India</stored-value>
-            </pair>
-
-	    <pair>
                 <displayed-value>France</displayed-value>
                 <stored-value>France</stored-value>
             </pair>
@@ -1914,10 +1900,6 @@
             <pair>
                 <displayed-value>Spanish</displayed-value>
                 <stored-value>es</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Thai</displayed-value>
-                <stored-value>th</stored-value>
             </pair>
             <pair>
                 <displayed-value>German</displayed-value>

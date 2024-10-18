@@ -163,7 +163,7 @@
         <property name="sidebarFacets">
             <list>
                 <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterOfficialSubject" />
+               <!-- <ref bean="searchFilterOfficialSubject" />-->
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterAudience" />
                 <ref bean="searchFilterCoverage" />
@@ -180,8 +180,7 @@
             <list>
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterOfficialSubject" />
-                <ref bean="searchFilterSubject" />
+               <!-- <ref bean="searchFilterOfficialSubject" />-->                <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterAudience" />
                 <ref bean="searchFilterCoverage" />
                 <ref bean="searchFilterType"/>
@@ -2366,7 +2365,7 @@
 
     </bean>
 
-    <bean id="searchFilterOfficialSubject" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
+    <!--<bean id="searchFilterOfficialSubject" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
         <property name="indexFieldName" value="officialsubject"/>
         <property name="metadataFields">
             <list>
@@ -2377,7 +2376,7 @@
         <property name="sortOrderSidebar" value="COUNT"/>
         <property name="sortOrderFilterPage" value="COUNT"/>
         <property name="splitter" value="::"/>
-    </bean>
+    </bean>-->
 
     <bean id="searchFilterIssued" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="dateIssued"/>
